@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'empreinte-carbone' title`, () => {
+  it(`should have the 'calcul-empreinte-carbone' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('empreinte-carbone');
+    expect(app.title).toEqual('calcul-empreinte-carbone');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, empreinte-carbone');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, calcul-empreinte-carbone');
   });
 });

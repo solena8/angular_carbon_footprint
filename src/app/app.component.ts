@@ -3,14 +3,15 @@ import { RouterOutlet } from '@angular/router';
 import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
 import {CarbonFootprintComponent} from './carbon-footprint/carbon-footprint.component';
+import {CarbonFootprintComputeService} from './services/carbon-footprint-compute.service';
 
 @Component({
   selector: 'app-root',
-  standalone : true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, CarbonFootprintComponent],
+  imports: [RouterOutlet],
+  providers: [CarbonFootprintComputeService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'empreinte-carbone';
+  title = 'calcul-empreinte-carbone';
 }
